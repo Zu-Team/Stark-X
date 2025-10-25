@@ -16,9 +16,13 @@ export default function Navigation() {
           {/* Logo */}
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">SX</span>
-              </div>
+              <Image
+                src="/logo.png"
+                alt="Stark X Logo"
+                width={40}
+                height={40}
+                className="rounded-lg"
+              />
             </div>
             <div className="ml-3">
               <h1 className="text-xl font-bold text-gray-900 dark:text-white">Stark X</h1>
