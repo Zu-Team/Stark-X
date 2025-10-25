@@ -14,7 +14,7 @@ export default function StyledButton({ children, onClick, className = '', icon }
     <button
       onClick={onClick}
       className={`
-        relative px-8 py-4 text-lg font-bold text-white
+        relative px-6 py-3 text-base font-bold text-white
         bg-gradient-to-b from-gray-800 to-gray-700
         rounded-full cursor-pointer
         shadow-[0_2px_4px_rgba(0,0,0,1),0_10px_20px_rgba(0,0,0,0.4)]
@@ -32,7 +32,7 @@ export default function StyledButton({ children, onClick, className = '', icon }
     >
       {children}
       {icon && (
-        <div className="relative flex items-center justify-center w-10 h-10 ml-2.5 bg-gradient-to-b from-gray-800 to-gray-700 rounded-full shadow-[0_0_1px_rgba(0,0,0,1)] border border-gray-600 transition-all duration-200 before:absolute before:-top-0.5 before:-right-0.5 before:-bottom-0.5 before:-left-0.5 before:bg-gradient-to-b before:from-gray-600 before:to-black before:-z-10 before:rounded-full before:transition-all before:duration-200 before:opacity-100">
+        <div className="relative flex items-center justify-center w-8 h-8 ml-2 bg-gradient-to-b from-gray-800 to-gray-700 rounded-full shadow-[0_0_1px_rgba(0,0,0,1)] border border-gray-600 transition-all duration-200 before:absolute before:-top-0.5 before:-right-0.5 before:-bottom-0.5 before:-left-0.5 before:bg-gradient-to-b before:from-gray-600 before:to-black before:-z-10 before:rounded-full before:transition-all before:duration-200 before:opacity-100">
           <div className="icon transition-all duration-400 ease-in-out hover:rotate-[-35deg] hover:drop-shadow-[0_10px_20px_rgba(50,50,50,1),0_0_20px_rgba(2,2,2,1)] drop-shadow-[0_10px_20px_rgba(26,25,25,0.9),0_0_4px_rgba(0,0,0,1)]">
             {icon}
           </div>
