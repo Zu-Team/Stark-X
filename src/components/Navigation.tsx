@@ -71,11 +71,9 @@ export default function Navigation() {
                 <button className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
                   Log In
                 </button>
-                <StyledButton 
-                  onClick={() => console.log('Sign Up clicked')}
-                >
+                <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors duration-200">
                   Sign Up
-                </StyledButton>
+                </button>
               </div>
             )}
 
