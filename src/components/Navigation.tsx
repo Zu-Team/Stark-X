@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import ThemeToggle from './ThemeToggle';
+import StyledButton from './StyledButton';
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -70,9 +71,16 @@ export default function Navigation() {
                 <button className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
                   Log In
                 </button>
-                <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors duration-200">
+                <StyledButton 
+                  onClick={() => console.log('Sign Up clicked')}
+                  icon={
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                    </svg>
+                  }
+                >
                   Sign Up
-                </button>
+                </StyledButton>
               </div>
             )}
 
