@@ -4,7 +4,7 @@ export default function Home() {
       <main className="container mx-auto px-4 py-16">
         <div className="text-center">
           <h1 className="text-6xl font-bold text-gray-900 dark:text-white mb-6">
-            Hello World! 👋
+            Hello World! 👋 - Vercel Fixed!
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
             Welcome to Stark X - Your Next.js Application
