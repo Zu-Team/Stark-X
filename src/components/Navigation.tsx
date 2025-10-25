@@ -75,8 +75,14 @@ export default function Navigation() {
                 <button className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
                   Log In
                 </button>
-                <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors duration-200">
-                  Sign Up
+                <button className="relative group overflow-hidden bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 p-[2px] rounded-full">
+                  <div className="relative bg-white dark:bg-gray-900 rounded-full px-6 py-2 text-sm font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 transition-all duration-300 group-hover:scale-105">
+                    <span className="relative z-10">Sign Up</span>
+                    <div className="absolute inset-0 bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <span className="absolute inset-0 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      Sign Up
+                    </span>
+                  </div>
                 </button>
               </div>
             )}
